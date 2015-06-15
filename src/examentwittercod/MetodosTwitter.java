@@ -33,6 +33,10 @@ public class MetodosTwitter {
          .setOAuthAccessToken("539765711-c9wdsB3gItICpwesP6T4KPPjcY6r26CdOCyRdy6t")
          .setOAuthAccessTokenSecret("IPj2Tqz1cq15nkmwMZandtWPmBcdxeRpdsnsCoim0WRrg");
 
+        /*
+         ----Aqui introduciriamos los nuestros datos personales de cada uno para poder acceder a nuestro twitter.----
+        
+        
          /*twitter = new TwitterFactory(cb.build()).getInstance();*/    
         twitter = new TwitterFactory("twitter4j.properties").getInstance();
 
@@ -44,7 +48,7 @@ public class MetodosTwitter {
     public void verTL() throws TwitterException {
 
         List<Status> statuses = twitter.getHomeTimeline();
-        System.out.println("Showing home timeline.");
+        System.out.println("Mostrando Linea del Tiempo.");
         for (Status status : statuses) {
             System.out.println(status.getUser().getName() + ":"
                     + status.getText());
