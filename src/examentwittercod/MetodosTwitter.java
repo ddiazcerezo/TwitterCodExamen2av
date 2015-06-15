@@ -22,16 +22,16 @@ public class MetodosTwitter {
      Twitter twitter;
 
     /**
-     * Constructor, da acceso a nuestra cuenta en twitter.
+     * Costructores para acceder a twitter
      */
     public MetodosTwitter() {
 
-        ConfigurationBuilder cb = new ConfigurationBuilder();
+        /*ConfigurationBuilder cb = new ConfigurationBuilder();
          cb.setDebugEnabled(true)
-         .setOAuthConsumerKey("1HeWmOMpW4AvsQgdnXzcgv0i8")
-         .setOAuthConsumerSecret("qGGvfLK4TFLOi4yWurHe9YYrUIk25jyK1AoDED65uKBqThKAId")
-         .setOAuthAccessToken("539765711-c9wdsB3gItICpwesP6T4KPPjcY6r26CdOCyRdy6t")
-         .setOAuthAccessTokenSecret("IPj2Tqz1cq15nkmwMZandtWPmBcdxeRpdsnsCoim0WRrg");
+         .setOAuthConsumerKey("*********")
+         .setOAuthConsumerSecret("********")
+         .setOAuthAccessToken("***********")
+         .setOAuthAccessTokenSecret("*********");
 
         /*
          ----Aqui introduciriamos los nuestros datos personales de cada uno para poder acceder a nuestro twitter.----
@@ -57,7 +57,7 @@ public class MetodosTwitter {
     }
 
     /**
-     * Busca tweets con el texto introducido
+     * Busca tweets a partir de una String
      */
     public void buscarTrending(String busqueda) throws TwitterException {
 
@@ -70,7 +70,7 @@ public class MetodosTwitter {
     }
 
     /**
-     * Crea y publica un tweet
+     * Nos permite publicar nuevos twitters
      */
     public void tweetear(String tweet) throws TwitterException {
 
